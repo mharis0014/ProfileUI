@@ -2,7 +2,7 @@ import {StyleSheet, Dimensions} from 'react-native'
 
 const {height, width} = Dimensions.get('window')
 
-export const styles = StyleSheet.create({
+export const SignupStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f2f2f2',
@@ -38,4 +38,9 @@ export const styles = StyleSheet.create({
   },
   blackText: {color: '#000', fontSize: 13},
   boldText: {color: '#3d37cd', fontWeight: 'bold'},
+})
+
+export const LoginStyles = StyleSheet.create({
+  image: {width: 200, height: 150},
+  rightAlign: {alignSelf: 'flex-end', marginRight: 25},
 })

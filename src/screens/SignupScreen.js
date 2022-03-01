@@ -3,10 +3,10 @@ import {View, Text, TouchableOpacity} from 'react-native'
 
 import CustomInput from '../components/CustomInput'
 import CustomButton from '../components/CustomButton'
-import {styles} from '../styles/SignupStyles'
+import {SignupStyles} from '../styles/AuthStyles'
 
 const SignupScreen = ({navigation}) => {
-  const {container, heading, smallText, blackText, boldText} = styles
+  const {container, heading, smallText, blackText, boldText} = SignupStyles
   return (
     <View style={container}>
       <Text style={heading}>Let's Get Started!</Text>

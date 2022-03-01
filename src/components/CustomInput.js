@@ -5,11 +5,11 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-import {styles} from '../styles/SignupStyles'
+import {SignupStyles} from '../styles/AuthStyles'
 
 const CustomInput = props => {
   const {text, IconType, iconName} = props
-  const {inputContainer, inputText} = styles
+  const {inputContainer, inputText} = SignupStyles
 
   return (
     <View style={inputContainer}>

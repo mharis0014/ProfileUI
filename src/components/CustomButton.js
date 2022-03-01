@@ -15,7 +15,7 @@ const CustomButton = props => {
         alignItems: 'center',
         borderRadius: 50,
       }}>
-      <Text style={{fontWeight: 'bold'}}>{btnText}</Text>
+      <Text style={{fontWeight: 'bold', color: '#fff'}}>{btnText}</Text>
     </View>
   )
 }
