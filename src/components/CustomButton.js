@@ -1,11 +1,12 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {TouchableOpacity, Text} from 'react-native'
 
 const CustomButton = props => {
-  const {btnColor, btnText} = props
+  const {btnColor, btnText, onPress} = props
 
   return (
-    <View
+    <TouchableOpacity
+      onPress={onPress}
       style={{
         margin: 25,
         width: 150,
@@ -16,7 +17,7 @@ const CustomButton = props => {
         borderRadius: 50,
       }}>
       <Text style={{fontWeight: 'bold', color: '#fff'}}>{btnText}</Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 

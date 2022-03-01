@@ -1,12 +1,13 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {Text, TouchableOpacity} from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 const SocialButton = props => {
-  const {btnColor, btnText, iconName} = props
+  const {btnColor, btnText, iconName, onPress} = props
 
   return (
-    <View
+    <TouchableOpacity
+      onPress={onPress}
       style={{
         margin: 25,
         width: 115,
@@ -26,7 +27,7 @@ const SocialButton = props => {
       <Text style={{fontWeight: 'bold', color: '#fff', fontSize: 12}}>
         {btnText}
       </Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 

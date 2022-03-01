@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, TextInput} from 'react-native'
 import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Fontisto from 'react-native-vector-icons/Fontisto'
@@ -8,7 +8,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import {SignupStyles} from '../styles/AuthStyles'
 
 const CustomInput = props => {
-  const {text, IconType, iconName} = props
+  const {text, IconType, iconName, onChangeText, placeholder} = props
   const {inputContainer, inputText} = SignupStyles
 
   return (
@@ -22,7 +22,12 @@ const CustomInput = props => {
       ) : IconType === 'Ionicons' ? (
         <Ionicons name={iconName} size={18} color="#888" />
       ) : null}
-      <Text style={inputText}>{text}</Text>
+      <TextInput
+        style={inputText}
+        placeholder={placeholder}
+        value={text}
+        onChangeText={onChangeText}
+      />
     </View>
   )
 }
